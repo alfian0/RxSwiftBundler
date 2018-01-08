@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362D9BD7ACC3B60CF6D31539 /* Pods_RxSwiftBudler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4AFEAFF2C97ED495889291 /* Pods_RxSwiftBudler.framework */; };
 		E5A07AA320034FF200E05E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07AA220034FF200E05E2B /* AppDelegate.swift */; };
 		E5A07AA520034FF200E05E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07AA420034FF200E05E2B /* ViewController.swift */; };
 		E5A07AA820034FF200E05E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A07AA620034FF200E05E2B /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC5DDF5C9A573FDDE0BE768D /* Pods-RxSwiftBudler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBudler.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftBudler/Pods-RxSwiftBudler.release.xcconfig"; sourceTree = "<group>"; };
+		DE4AFEAFF2C97ED495889291 /* Pods_RxSwiftBudler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftBudler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A07A9F20034FF200E05E2B /* RxSwiftBudler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftBudler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A07AA220034FF200E05E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5A07AA420034FF200E05E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E5A07AA920034FF200E05E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5A07AAC20034FF200E05E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5A07AAE20034FF200E05E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F05DF99EBACB244CC03679B9 /* Pods-RxSwiftBudler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBudler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftBudler/Pods-RxSwiftBudler.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362D9BD7ACC3B60CF6D31539 /* Pods_RxSwiftBudler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1C4F1EB4CCBFDDFF3A5D8AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE4AFEAFF2C97ED495889291 /* Pods_RxSwiftBudler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B109032B92389DCEFAF43284 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F05DF99EBACB244CC03679B9 /* Pods-RxSwiftBudler.debug.xcconfig */,
+				BC5DDF5C9A573FDDE0BE768D /* Pods-RxSwiftBudler.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5A07A9620034FF200E05E2B = {
 			isa = PBXGroup;
 			children = (
 				E5A07AA120034FF200E05E2B /* RxSwiftBudler */,
 				E5A07AA020034FF200E05E2B /* Products */,
+				B109032B92389DCEFAF43284 /* Pods */,
+				A1C4F1EB4CCBFDDFF3A5D8AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5A07AB120034FF200E05E2B /* Build configuration list for PBXNativeTarget "RxSwiftBudler" */;
 			buildPhases = (
+				681C09E8ECDA87EA18A1E9A3 /* [CP] Check Pods Manifest.lock */,
 				E5A07A9B20034FF200E05E2B /* Sources */,
 				E5A07A9C20034FF200E05E2B /* Frameworks */,
 				E5A07A9D20034FF200E05E2B /* Resources */,
+				DA8ECAF6B00F0836C15B6B1E /* [CP] Embed Pods Frameworks */,
+				5E0C2FECD3CA5BB6E001EB53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E0C2FECD3CA5BB6E001EB53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftBudler/Pods-RxSwiftBudler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681C09E8ECDA87EA18A1E9A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftBudler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8ECAF6B00F0836C15B6B1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftBudler/Pods-RxSwiftBudler-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftBudler/Pods-RxSwiftBudler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5A07A9B20034FF200E05E2B /* Sources */ = {
@@ -257,6 +344,7 @@
 		};
 		E5A07AB220034FF200E05E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05DF99EBACB244CC03679B9 /* Pods-RxSwiftBudler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62SM4SCVJM;
@@ -270,6 +358,7 @@
 		};
 		E5A07AB320034FF200E05E2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5DDF5C9A573FDDE0BE768D /* Pods-RxSwiftBudler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62SM4SCVJM;
