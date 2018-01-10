@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		362D9BD7ACC3B60CF6D31539 /* Pods_RxSwiftBudler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4AFEAFF2C97ED495889291 /* Pods_RxSwiftBudler.framework */; };
 		E5A07AA320034FF200E05E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07AA220034FF200E05E2B /* AppDelegate.swift */; };
-		E5A07AA520034FF200E05E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07AA420034FF200E05E2B /* ViewController.swift */; };
-		E5A07AA820034FF200E05E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A07AA620034FF200E05E2B /* Main.storyboard */; };
 		E5A07AAA20034FF200E05E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5A07AA920034FF200E05E2B /* Assets.xcassets */; };
 		E5A07AAD20034FF200E05E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5A07AAB20034FF200E05E2B /* LaunchScreen.storyboard */; };
+		E5A07AB9200506C400E05E2B /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07AB7200506C400E05E2B /* AppViewController.swift */; };
+		E5A07ABA200506C400E05E2B /* AppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A07AB8200506C400E05E2B /* AppViewController.xib */; };
+		E5A07ABD200508CD00E05E2B /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07ABC200508CD00E05E2B /* AppViewModel.swift */; };
+		E5A07AC020050A1100E05E2B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07ABF20050A1100E05E2B /* UserModel.swift */; };
+		E5A07AC32005C5BC00E05E2B /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07AC22005C5BC00E05E2B /* GithubAPI.swift */; };
+		E5A07AC52005CF0100E05E2B /* CustomParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A07AC42005CF0100E05E2B /* CustomParameterEncoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +24,15 @@
 		DE4AFEAFF2C97ED495889291 /* Pods_RxSwiftBudler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftBudler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A07A9F20034FF200E05E2B /* RxSwiftBudler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftBudler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A07AA220034FF200E05E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5A07AA420034FF200E05E2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5A07AA720034FF200E05E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5A07AA920034FF200E05E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5A07AAC20034FF200E05E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5A07AAE20034FF200E05E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A07AB7200506C400E05E2B /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		E5A07AB8200506C400E05E2B /* AppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppViewController.xib; sourceTree = "<group>"; };
+		E5A07ABC200508CD00E05E2B /* AppViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		E5A07ABF20050A1100E05E2B /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E5A07AC22005C5BC00E05E2B /* GithubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		E5A07AC42005CF0100E05E2B /* CustomParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomParameterEncoding.swift; sourceTree = "<group>"; };
 		F05DF99EBACB244CC03679B9 /* Pods-RxSwiftBudler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftBudler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftBudler/Pods-RxSwiftBudler.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,13 +87,49 @@
 			isa = PBXGroup;
 			children = (
 				E5A07AA220034FF200E05E2B /* AppDelegate.swift */,
-				E5A07AA420034FF200E05E2B /* ViewController.swift */,
-				E5A07AA620034FF200E05E2B /* Main.storyboard */,
 				E5A07AA920034FF200E05E2B /* Assets.xcassets */,
 				E5A07AAB20034FF200E05E2B /* LaunchScreen.storyboard */,
 				E5A07AAE20034FF200E05E2B /* Info.plist */,
+				E5A07ABE2005090600E05E2B /* Models */,
+				E5A07AC12005C56700E05E2B /* Networking */,
+				E5A07ABB2005081300E05E2B /* ViewModels */,
+				E5A07AB62005069300E05E2B /* Views */,
 			);
 			path = RxSwiftBudler;
+			sourceTree = "<group>";
+		};
+		E5A07AB62005069300E05E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5A07AB7200506C400E05E2B /* AppViewController.swift */,
+				E5A07AB8200506C400E05E2B /* AppViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5A07ABB2005081300E05E2B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E5A07ABC200508CD00E05E2B /* AppViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E5A07ABE2005090600E05E2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5A07ABF20050A1100E05E2B /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5A07AC12005C56700E05E2B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E5A07AC22005C5BC00E05E2B /* GithubAPI.swift */,
+				E5A07AC42005CF0100E05E2B /* CustomParameterEncoding.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +196,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A07AAD20034FF200E05E2B /* LaunchScreen.storyboard in Resources */,
+				E5A07ABA200506C400E05E2B /* AppViewController.xib in Resources */,
 				E5A07AAA20034FF200E05E2B /* Assets.xcassets in Resources */,
-				E5A07AA820034FF200E05E2B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,14 +246,18 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftBudler/Pods-RxSwiftBudler-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,22 +272,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5A07AA520034FF200E05E2B /* ViewController.swift in Sources */,
+				E5A07AB9200506C400E05E2B /* AppViewController.swift in Sources */,
+				E5A07AC32005C5BC00E05E2B /* GithubAPI.swift in Sources */,
 				E5A07AA320034FF200E05E2B /* AppDelegate.swift in Sources */,
+				E5A07AC020050A1100E05E2B /* UserModel.swift in Sources */,
+				E5A07ABD200508CD00E05E2B /* AppViewModel.swift in Sources */,
+				E5A07AC52005CF0100E05E2B /* CustomParameterEncoding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5A07AA620034FF200E05E2B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5A07AA720034FF200E05E2B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5A07AAB20034FF200E05E2B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -389,6 +433,7 @@
 				E5A07AB320034FF200E05E2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
